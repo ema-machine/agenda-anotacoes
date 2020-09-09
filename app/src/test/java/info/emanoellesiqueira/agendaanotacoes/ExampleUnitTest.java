@@ -1,4 +1,4 @@
-package info.gezielcarvalho.agendaanotacoes;
+package info.emanoellesiqueira.agendaanotacoes;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package info.gezielcarvalho.agendaanotacoes;
+package info.emanoellesiqueira.agendaanotacoes;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -141,6 +141,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public Boolean procurarDadosArquivos(String fileName, String texto){
+        if(texto.length() == 0){
+            return false;
+        }
 
         try{
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
